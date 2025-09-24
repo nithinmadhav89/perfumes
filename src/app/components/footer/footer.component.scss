@@ -1,0 +1,42 @@
+footer {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.95rem;
+  border-top: 1px solid #c1baa1;
+}
+
+h5 {
+  font-weight: 600;
+  color: #a59d84;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c1baa1 !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  footer {
+    padding: 20px 0;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+}
