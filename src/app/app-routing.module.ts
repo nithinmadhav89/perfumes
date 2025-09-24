@@ -5,9 +5,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect root to /home (create HomeComponent if needed)
+  { path: 'home', component: HomeComponent }, // Placeholder; replace with your home component
+  { path: 'about', component: AboutComponent }, // Create these components
   { path: 'products', component: ProductDetailsComponent },
+  { path: '**', redirectTo: '' }, // Wildcard to handle invalid routes
 ];
 
 @NgModule({

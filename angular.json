@@ -24,20 +24,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/perfume",
+            "outputPath": "dist/perfume-business/browser",
+            "baseHref": "/perfume-business/",
+            "deployUrl": "/perfume-business/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/custom-project/assets",
-                "output": "/assets/"
-              }
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
