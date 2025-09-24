@@ -24,8 +24,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/perfume-business/browser",
-            "baseHref": "/perfume-business/",
+            "outputPath": "dist/perfumes/browser",
+            "baseHref": "/perfumes/",
             "deployUrl": "/perfume-business/",
             "index": "src/index.html",
             "browser": "src/main.ts",
