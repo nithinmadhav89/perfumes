@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/perfumes": {},
+    "/perfumes/about": {},
+    "/perfumes/home": {},
+    "/perfumes/products": {}
+  }
+}
